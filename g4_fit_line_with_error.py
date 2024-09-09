@@ -22,6 +22,7 @@ x = np.linspace(x1, x2, nBins)
 y0 = 2. + 3.*x
 
 noise = np.random.normal(mean, sigma, len(x))
+noise = np.abs(noise)
 
 y = y0 + noise
 
